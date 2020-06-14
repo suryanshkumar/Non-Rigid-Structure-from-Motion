@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
 .main{
   max-width: 1200px;
   margin: 0 auto !important;
   float: none !important;
   padding: 1em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Lato;
   font-size: 15px;
   text-align: justify;
   color: rgb(0, 0, 0);
