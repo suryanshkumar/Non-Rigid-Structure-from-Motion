@@ -1,0 +1,12 @@
+.main{
+  max-width: 1200px;
+  margin: 0 auto !important;
+  float: none !important;
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+  background-color:rgb(255,255,255);
+}
+

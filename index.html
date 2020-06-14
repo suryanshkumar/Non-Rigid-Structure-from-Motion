@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Non-Rigid Structure from Motion</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+<div class="main">
+  <div align="center">
+    <p><font size="4"><b>Non-Rigid Structure from Motion</b></font></p>
+
+    <table>
+      <tr>
+        <td align="center">Suryansh Kumar<sup>1, 2</sup>&nbsp;</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td align="center"><sup>1</sup>ETH Zurich,&nbsp;</td>
+        <td align="center"><sup>2</sup>Australian National University</td> 
+      </tr>
+    </table>
+    <br>
+
+    <img style="width: 80%;" src="./Figures/NRSFM.png">
+  </div>
+
+  <div>
+    <p><b>Abstract</b></p>
+    <p>
+      The problem of recovering non-rigid 3D shape and relative motion between camera and object from image feature correspondences is widely known as Non-Rigid Structure from Motion (NRSfM). It is a well-defined classical problem whose solution can assist several industrial applications such as virtual reality, medical surgery, movies etc. To date, there does not exist any algorithm that can solve NRSfM for all kinds of conceivable motion. As a result, additional constraints and assumptions are often employed to solve NRSfM. The task is challenging due to the inherent unconstrained nature of the problem itself as many 3D varying configurations can have similar image projections. The problem becomes even more challenging if the camera is moving along with the object.
+    
+      Our work takes on this challenging problem and proposes a few algorithms that have set a new performance benchmark to solve NRSfM. Our solutions not only discusses the classical work in NRSfM but also proposes some powerful elementary modifications to it. The foundation of our contribution surpass the traditional single object NRSFM and for the first time provides an effective formulation to realize multi-body NRSfM.
+    
+      Most techniques for NRSfM under factorization can only handle sparse feature correspondences. These sparse features are then used to construct the scene using organization of points, lines, planes or other elementary geometric primitive. Nevertheless, sparse representation of the scene provides an incomplete information about the scene. Our work goes from sparse NRSfM to dense NRSfM for a single object, and then slowly lifts the intuition to realize dense 3D reconstruction of the entire dynamic scene as a global as rigid as possible  deformation problem.
+    
+      The core of this work goes beyond the traditional approach to deal with deformation. We show that relative scales for deforming objects under perspective projection can be recovered under some mild assumption about the scene. The work proposes a new approach for dense detailed 3D reconstruction of a complex dynamic scene from two perspective frames. Since the method does not need any depth information nor it assumes a template prior, or per-object segmentation, or knowledge about the rigidity of the dynamic scene, it is applicable to a wide range of scenarios.
+    </p>
+  </div>
+
+  <div>
+    <p><b>Paper-Links</b></p>
+    <table>
+      <tr>
+        <td align="center"><a href="https://openresearch-repository.anu.edu.au/handle/1885/164278?mode=full"><img height="100" border="1" src="./Figures/thesis_phd.png"></a></td>
+        <td align="center"><a href="https://arxiv.org/pdf/1902.10274.pdf"><img height="100" border="1" src="./Figures/wacv20_paper.png"></a></td>
+        <td align="center"><a href="https://arxiv.org/pdf/1902.01077.pdf"><img height="100" border="1" src="./Figures/cvpr19_paper.png"></a></td>
+        <td align="center"><a href="https://arxiv.org/pdf/1803.00233.pdf"><img height="100" border="1" src="./Figures/cvpr18_paper.png"></a></td>
+        <td align="center"><a href="https://arxiv.org/pdf/1911.09092.pdf"><img height="100" border="1" src="./Figures/tpami19_paper.png"></a></td>
+        <td align="center"><a href="https://arxiv.org/pdf/1708.04398.pdf"><img height="100" border="1" src="./Figures/iccv17_paper.png"></a></td>
+        <td align="center"><a href="https://arxiv.org/pdf/1705.04916.pdf"><img height="100" border="1" src="./Figures/pr17_paper.png"></a></td>
+        <td align="center"><a href="https://arxiv.org/pdf/1607.04515.pdf"><img height="100" border="1" src="./Figures/3dv16_paper.png"></a></td>
+        <td align="center"><a href="https://arxiv.org/pdf/1902.03791.pdf"><img height="100" border="1" src="./Figures/arxiv20_paper.png"></a></td>
+      </tr>
+
+      <tr>
+        <td align="center">Ph.D. Thesis</td>
+        <td align="center">WACV'20</td>
+        <td align="center">CVPR'19</td>
+        <td align="center">CVPR'18</td>
+        <td align="center">TPAMI'19</td>
+        <td align="center">ICCV'17</td>
+        <td align="center">PR'17</td>
+        <td align="center">3DV'16</td>
+        <td align="center">arXiv</td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <p><b>Video-Links</b></p>
+    <table>
+      <tr>
+        <td align="center"><a href="https://www.youtube.com/watch?v=4RMbnUHd23Y"><img height="100" border="1" src="./Figures/video_link1.png"></a></td>
+        <td align="center"><a href="https://www.youtube.com/watch?v=3cLIQHBEyzA"><img height="100" border="1" src="./Figures/video_link2.png"></a></td>
+        <td align="center"><a href="https://www.youtube.com/watch?v=KSLrDnOI2m4"><img height="100" border="1" src="./Figures/video_link3.png"></a></td>
+        <td align="center"><a href="https://www.youtube.com/watch?v=_bLyoKmwej0"><img height="100" border="1" src="./Figures/video_link4.png"></a></td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <p><b>Bibtex</b></p>
+    <pre style="font-size: 12px">
+    @phdthesis{1885-164278,
+      author = {Kumar, Suryansh},
+      title = {Non-Rigid Structure from Motion},
+      school = {College of Engineering & Computer Science, The Australian National University},
+      year = {2019}
+    }
+
+    @inproceedings{Kumar_2020_WACV,
+      author={Kumar, Suryansh},
+      title={Non-Rigid Structure from Motion: Prior-Free Factorization Method Revisited},
+      booktitle={The IEEE Winter Conference on Applications of Computer Vision (WACV)},
+      pages={51-60},
+      month={March},
+      year={2020}
+    }
+
+    @inproceedings{kumar2019jumping,
+      title={Jumping manifolds: Geometry aware dense non-rigid structure from motion},
+      author={Kumar, Suryansh},
+      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+      pages={5346--5355},
+      year={2019}
+    }
+
+    @inproceedings{kumar2018scalable,
+      title={Scalable dense non-rigid structure-from-motion: A grassmannian perspective},
+      author={Kumar, Suryansh and Cherian, Anoop and Dai, Yuchao and Li, Hongdong},
+      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+      pages={254--263},
+      year={2018}
+    }
+
+    @article{kumar2019superpixelsoup,
+      author={Kumar, Suryansh and Dai, Yuchao and Li, Hongdong},
+      journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+      title={Superpixel Soup: Monocular Dense 3D Reconstruction of a Complex Dynamic Scene},
+      doi={10.1109/TPAMI.2019.2955131},
+      year={2019}
+    }
+    
+    @inproceedings{kumar2017monocular,
+      title={Monocular dense 3d reconstruction of a complex dynamic scene from two perspective frames},
+      author={Kumar, Suryansh and Dai, Yuchao and Li, Hongdong},
+      booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+      pages={4649--4657},
+      year={2017}
+    }
+        
+    @article{kumar2017spatio,
+      title={Spatio-temporal union of subspaces for multi-body non-rigid structure-from-motion},
+      author={Kumar, Suryansh and Dai, Yuchao and Li, Hongdong},
+      journal={Pattern Recognition},
+      volume={71},
+      pages={428--443},
+      year={2017},
+      publisher={Elsevier}
+    }
+
+    @inproceedings{kumar2016multi,
+      title={Multi-body non-rigid structure-from-motion},
+      author={Kumar, Suryansh and Dai, Yuchao and Li, Hongdong},
+      booktitle={2016 Fourth International Conference on 3D Vision (3DV)},
+      pages={148--156},
+      year={2016},
+      organization={IEEE}
+    }
+    
+    @article{kumar2019dense,
+      title={Dense depth estimation of a complex dynamic scene without explicit 3d motion estimation},
+      author={Kumar, Suryansh and Ghorakavi, Ram Srivatsav and Dai, Yuchao and Li, Hongdong},
+      journal={arXiv preprint arXiv:1902.03791},
+      year={2019}
+    }
+    </pre>
+  </div>
+
+</div> 
+</body>
+
+</html>
