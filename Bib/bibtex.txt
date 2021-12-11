@@ -1,0 +1,81 @@
+    @phdthesis{1885-164278,
+      author = {Kumar, Suryansh},
+      title = {Non-Rigid Structure from Motion},
+      school = {College of Engineering & Computer Science, The Australian National University},
+      year = {2019}
+    }
+
+    @inproceedings{Kumar_2020_WACV,
+      author={Kumar, Suryansh},
+      title={Non-Rigid Structure from Motion: Prior-Free Factorization Method Revisited},
+      booktitle={The IEEE Winter Conference on Applications of Computer Vision (WACV)},
+      pages={51-60},
+      month={March},
+      year={2020}
+    }
+
+    @inproceedings{kumar2019jumping,
+      title={Jumping manifolds: Geometry aware dense non-rigid structure from motion},
+      author={Kumar, Suryansh},
+      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+      pages={5346--5355},
+      year={2019}
+    }
+
+    @inproceedings{kumar2018scalable,
+      title={Scalable dense non-rigid structure-from-motion: A grassmannian perspective},
+      author={Kumar, Suryansh and Cherian, Anoop and Dai, Yuchao and Li, Hongdong},
+      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+      pages={254--263},
+      year={2018}
+    }
+
+    @article{kumar2019superpixelsoup,
+      author={Kumar, Suryansh and Dai, Yuchao and Li, Hongdong},
+      journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+      title={Superpixel Soup: Monocular Dense 3D Reconstruction of a Complex Dynamic Scene},
+      doi={10.1109/TPAMI.2019.2955131},
+      year={2019}
+    }
+    
+    @inproceedings{kumar2017monocular,
+      title={Monocular dense 3d reconstruction of a complex dynamic scene from two perspective frames},
+      author={Kumar, Suryansh and Dai, Yuchao and Li, Hongdong},
+      booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+      pages={4649--4657},
+      year={2017}
+    }
+        
+    @article{kumar2017spatio,
+      title={Spatio-temporal union of subspaces for multi-body non-rigid structure-from-motion},
+      author={Kumar, Suryansh and Dai, Yuchao and Li, Hongdong},
+      journal={Pattern Recognition},
+      volume={71},
+      pages={428--443},
+      year={2017},
+      publisher={Elsevier}
+    }
+
+    @inproceedings{kumar2016multi,
+      title={Multi-body non-rigid structure-from-motion},
+      author={Kumar, Suryansh and Dai, Yuchao and Li, Hongdong},
+      booktitle={2016 Fourth International Conference on 3D Vision (3DV)},
+      pages={148--156},
+      year={2016},
+      organization={IEEE}
+    }
+    
+    @article{kumar2019dense,
+      title={Dense depth estimation of a complex dynamic scene without explicit 3d motion estimation},
+      author={Kumar, Suryansh and Ghorakavi, Ram Srivatsav and Dai, Yuchao and Li, Hongdong},
+      journal={arXiv preprint arXiv:1902.03791},
+      year={2019}
+    }
+
+    @article{kumar2020densemanifold,
+      title={Dense Non-Rigid Structure from Motion: A Manifold Viewpoint},
+      author={Kumar, Suryansh and Gool, Luc Van and Oliveira, Carlos E. P. de and Cherian, Anoop and Dai, Yuchao and Li, Hongdong},
+      journal={arXiv preprint arXiv:2006.09197},
+      year={2020}
+    }
+    

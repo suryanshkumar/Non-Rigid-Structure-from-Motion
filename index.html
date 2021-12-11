@@ -1,194 +1,433 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+  body {
+    font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+  }
+
+  h1 {
+    font-weight: 300;
+    line-height: 1.15em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  a:link,
+  a:visited {
+    color: #1367a7;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #208799;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-weight: 400;
+    margin: 16px 0px 4px 0px;
+  }
+
+  .paper-title {
+    padding: 16px 0px 16px 0px;
+  }
+
+  section {
+    margin: 32px 0px 32px 0px;
+    text-align: justify;
+    clear: both;
+  }
+
+  .col-5 {
+    width: 20%;
+    float: left;
+  }
+
+  .col-4 {
+    width: 25%;
+    float: left;
+  }
+
+  .col-2 {
+    width: 50%;
+    float: left;
+  }
+
+  .row,
+  .author-row,
+  .affil-row {
+    overflow: auto;
+  }
+
+  .author-row,
+  .affil-row {
+    font-size: 20px;
+  }
+
+  .row {
+    margin: 16px 0px 16px 0px;
+  }
+
+  .authors {
+    font-size: 18px;
+  }
+
+  .affil-row {
+    margin-top: 16px;
+  }
+
+  .teaser {
+    max-width: 100%;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .screenshot {
+    width: 256px;
+    border: 1px solid #ddd;
+  }
+
+  .screenshot-el {
+    margin-bottom: 16px;
+  }
+
+  hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 0;
+  }
+
+  .material-icons {
+    vertical-align: -6px;
+  }
+
+  p {
+    line-height: 1.25em;
+  }
+
+  .caption {
+    font-size: 16px;
+    /*font-style: italic;*/
+    color: #666;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  video {
+    display: block;
+    margin: auto;
+  }
+
+  figure {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #bibtex pre {
+    font-size: 14px;
+    background-color: #eee;
+    padding: 16px;
+  }
+
+  .blue {
+    color: #2c82c9;
+    font-weight: bold;
+  }
+
+  .orange {
+    color: #d35400;
+    font-weight: bold;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .paper-btn {
+    position: relative;
+    text-align: center;
+
+    display: inline-block;
+    margin: 8px;
+    padding: 8px 8px;
+
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+
+    background-color: #1367a7;
+    color: #ecf0f1 !important;
+    font-size: 20px;
+    width: 100px;
+    font-weight: 600;
+  }
+
+  .paper-btn-parent {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+  }
+
+  .paper-btn:hover {
+    opacity: 0.85;
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .venue {
+    color: #1367a7;
+  }
+</style>
+
+<!-- End : Google Analytics Code -->
+<script type="text/javascript" src="../js/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic'
+  rel='stylesheet' type='text/css'>
 
 <head>
   <title>Non-Rigid Structure from Motion</title>
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <meta property="og:description" content="Non-Rigid Structure from Motion" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="">
+  <meta name="twitter:title" content="Non-Rigid Structure from Motion">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
 </head>
 
 <body>
-<div class="main">
-  <div align="center">
-    <p><font size="4"><b>Non-Rigid Structure from Motion</b></font></p>
+  <div class="container">
+    <div class="paper-title">
+      <h1>Non-Rigid Structure from Motion</h1>
+    </div>
 
-    <table>
-      <tr>
-        <td align="center">Suryansh Kumar<sup>1, 2</sup>&nbsp;</td>
-      </tr>
-    </table>
-    <table>
-      <tr>
-        <td align="center"><sup>1</sup>ETH Zurich,&nbsp;</td>
-        <td align="center"><sup>2</sup>Australian National University</td> 
-      </tr>
-    </table>
-    <br>
+    <div id="authors">
+      <div class="author-row">
+        <div align="center"><a href="">Suryansh Kumar</a>, ETH Zurich</div>
+      </div>
+    </div>
 
-    <img style="width: 80%;" src="./Figures/NRSFM.png">
-  </div>
+    <section id="teaser">
+      <a href="./Figures/NRSFM.png">
+        <img width="100%" src="./Figures/NRSFM.png">
+      </a>
+    </section>
 
-  <div>
-    <p><b>Abstract</b></p>
-    <p>
-      The problem of recovering non-rigid 3D shape and relative motion between camera and object from image feature correspondences is widely known as Non-Rigid Structure from Motion (NRSfM). It is a well-defined classical problem whose solution can assist several industrial applications such as virtual reality, medical surgery, movies etc. To date, there does not exist any algorithm that can solve NRSfM for all kinds of conceivable motion. As a result, additional constraints and assumptions are often employed to solve NRSfM. The task is challenging due to the inherent unconstrained nature of the problem itself as many 3D varying configurations can have similar image projections. The problem becomes even more challenging if the camera is moving along with the object.
-    
-      Our work takes on this challenging problem and proposes a few algorithms that have set a new performance benchmark to solve NRSfM. Our solutions not only discusses the classical work in NRSfM but also proposes some powerful elementary modifications to it. The foundation of our contribution surpass the traditional single object NRSFM and for the first time provides an effective formulation to realize multi-body NRSfM.
-    
-      Most techniques for NRSfM under factorization can only handle sparse feature correspondences. These sparse features are then used to construct the scene using organization of points, lines, planes or other elementary geometric primitive. Nevertheless, sparse representation of the scene provides an incomplete information about the scene. Our work goes from sparse NRSfM to dense NRSfM for a single object, and then slowly lifts the intuition to realize dense 3D reconstruction of the entire dynamic scene as a global as rigid as possible  deformation problem.
-    
-      The core of this work goes beyond the traditional approach to deal with deformation. We show that relative scales for deforming objects under perspective projection can be recovered under some mild assumption about the scene. The work proposes a new approach for dense detailed 3D reconstruction of a complex dynamic scene from two perspective frames. Since the method does not need any depth information nor it assumes a template prior, or per-object segmentation, or knowledge about the rigidity of the dynamic scene, it is applicable to a wide range of scenarios.
-    </p>
-  </div>
-
-  <div>
-    <p><b>Paper-Links</b></p>
-    <table>
-      <tr>
-        <td align="center"><a href="https://openresearch-repository.anu.edu.au/handle/1885/164278?mode=full"><img height="100" border="1" src="./Figures/thesis_phd.png"></a></td>
-        <td align="center"><a href="https://arxiv.org/pdf/1902.10274.pdf"><img height="100" border="1" src="./Figures/wacv20_paper.png"></a></td>
-        <td align="center"><a href="https://arxiv.org/pdf/1902.01077.pdf"><img height="100" border="1" src="./Figures/cvpr19_paper.png"></a></td>
-        <td align="center"><a href="https://arxiv.org/pdf/1803.00233.pdf"><img height="100" border="1" src="./Figures/cvpr18_paper.png"></a></td>
-        <td align="center"><a href="https://arxiv.org/pdf/1911.09092.pdf"><img height="100" border="1" src="./Figures/tpami19_paper.png"></a></td>
-        <td align="center"><a href="https://arxiv.org/pdf/1708.04398.pdf"><img height="100" border="1" src="./Figures/iccv17_paper.png"></a></td>
-        <td align="center"><a href="https://arxiv.org/pdf/1705.04916.pdf"><img height="100" border="1" src="./Figures/pr17_paper.png"></a></td>
-        <td align="center"><a href="https://arxiv.org/pdf/1607.04515.pdf"><img height="100" border="1" src="./Figures/3dv16_paper.png"></a></td>
-        <td align="center"><a href="https://arxiv.org/pdf/1902.03791.pdf"><img height="100" border="1" src="./Figures/arxiv20_paper.png"></a></td>
-        <td align="center"><a href="https://arxiv.org/pdf/2006.09197.pdf"><img height="100" border="1" src="./Figures/arxiv20_paper2.png"></a></td>
-      </tr>
-
-      <tr>
-        <td align="center">Ph.D. Thesis</td>
-        <td align="center">WACV'20</td>
-        <td align="center">CVPR'19</td>
-        <td align="center">CVPR'18</td>
-        <td align="center">TPAMI'19</td>
-        <td align="center">ICCV'17</td>
-        <td align="center">PR'17</td>
-        <td align="center">3DV'16</td>
-        <td align="center">arXiv 20</td>
-        <td align="center">arXiv 20</td>
-      </tr>
-    </table>
-  </div>
-
-  <div>
-    <p><b>Video-Links</b></p>
-    <table>
-      <tr>
-        <td align="center"><a href="https://www.youtube.com/watch?v=4RMbnUHd23Y"><img height="100" border="1" src="./Figures/video_link1.png"></a></td>
-        <td align="center"><a href="https://www.youtube.com/watch?v=3cLIQHBEyzA"><img height="100" border="1" src="./Figures/video_link2.png"></a></td>
-        <td align="center"><a href="https://www.youtube.com/watch?v=KSLrDnOI2m4"><img height="100" border="1" src="./Figures/video_link3.png"></a></td>
-        <td align="center"><a href="https://www.youtube.com/watch?v=_bLyoKmwej0"><img height="100" border="1" src="./Figures/video_link4.png"></a></td>
-      </tr>
-    </table>
-  </div>
-
-  <div>
-    <p><b>Advisors and Collaborators: </b></p>
-    <a>Yuchao Dai, Hongdong Li, Anoop Cherian</a>
-    <p><b>Acknowledgement: </b></p>
-    <a>Carl Olsson</a>
-  </div>
-  <hr>
-
-  <div>
-    <p><b>Project Accomplishment </b></p>
-    <ul>
-      <li>Recipient of Best Algorithm Award from Disney Research at NRSFM challenge CVPR 2017, Hawaii USA.</li>
-      <li>Nominated for J.G Crawford Prize for Best Doctoral Thesis 2019, ANU Canberra.</li>
-      <li>Recipient of HDR Merit Scholarship, funded in part by Australian Research Council.</li>
-      <li>Recipient of Vice-Chancellor Grant for CVPR 2018 Conference, Salt Lake City, Utah USA.</li>
-    </ul>
-  </div>
-  <hr>
-
-  <div>
-    <p><b>Bibtex</b></p>
-    <pre style="font-size: 12px">
-    @phdthesis{1885-164278,
-      author = {Kumar, Suryansh},
-      title = {Non-Rigid Structure from Motion},
-      school = {College of Engineering & Computer Science, The Australian National University},
-      year = {2019}
-    }
-
-    @inproceedings{Kumar_2020_WACV,
-      author={Kumar, Suryansh},
-      title={Non-Rigid Structure from Motion: Prior-Free Factorization Method Revisited},
-      booktitle={The IEEE Winter Conference on Applications of Computer Vision (WACV)},
-      pages={51-60},
-      month={March},
-      year={2020}
-    }
-
-    @inproceedings{kumar2019jumping,
-      title={Jumping manifolds: Geometry aware dense non-rigid structure from motion},
-      author={Kumar, Suryansh},
-      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-      pages={5346--5355},
-      year={2019}
-    }
-
-    @inproceedings{kumar2018scalable,
-      title={Scalable dense non-rigid structure-from-motion: A grassmannian perspective},
-      author={Kumar, Suryansh and Cherian, Anoop and Dai, Yuchao and Li, Hongdong},
-      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-      pages={254--263},
-      year={2018}
-    }
-
-    @article{kumar2019superpixelsoup,
-      author={Kumar, Suryansh and Dai, Yuchao and Li, Hongdong},
-      journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-      title={Superpixel Soup: Monocular Dense 3D Reconstruction of a Complex Dynamic Scene},
-      doi={10.1109/TPAMI.2019.2955131},
-      year={2019}
-    }
-    
-    @inproceedings{kumar2017monocular,
-      title={Monocular dense 3d reconstruction of a complex dynamic scene from two perspective frames},
-      author={Kumar, Suryansh and Dai, Yuchao and Li, Hongdong},
-      booktitle={Proceedings of the IEEE International Conference on Computer Vision},
-      pages={4649--4657},
-      year={2017}
-    }
+    <!--section id="teaser-videos">
+        <figure style="width: 33%; float: left">
+            <video class="centered" width="100%" controls muted loop>
+                <source src="assets/qualcomp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="caption">
+                Qualitative side-by-side comparisons of baselines (<span class="orange">orange</span>) against ours (<span class="blue">blue</span>).
+            </p>
+        </figure>
         
-    @article{kumar2017spatio,
-      title={Spatio-temporal union of subspaces for multi-body non-rigid structure-from-motion},
-      author={Kumar, Suryansh and Dai, Yuchao and Li, Hongdong},
-      journal={Pattern Recognition},
-      volume={71},
-      pages={428--443},
-      year={2017},
-      publisher={Elsevier}
-    }
+        <figure style="width: 33%; float: left">
+            <video class="centered" width="100%" controls muted loop>
+                <source src="assets/interp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="caption">
+                Comparison of no LOD blending (<span class="orange">orange</span>) vs LOD blending (<span class="blue">blue</span>).
+            </p>
+        </figure>
+        
+        <figure style="width: 33%; float: left">
+            <video class="centered" width="100%" controls muted loop>
+                <source src="assets/demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="caption">
+                Real-time demo of our renderer.
+            </p>
+        </figure>
+    </section-->
 
-    @inproceedings{kumar2016multi,
-      title={Multi-body non-rigid structure-from-motion},
-      author={Kumar, Suryansh and Dai, Yuchao and Li, Hongdong},
-      booktitle={2016 Fourth International Conference on 3D Vision (3DV)},
-      pages={148--156},
-      year={2016},
-      organization={IEEE}
-    }
-    
-    @article{kumar2019dense,
-      title={Dense depth estimation of a complex dynamic scene without explicit 3d motion estimation},
-      author={Kumar, Suryansh and Ghorakavi, Ram Srivatsav and Dai, Yuchao and Li, Hongdong},
-      journal={arXiv preprint arXiv:1902.03791},
-      year={2019}
-    }
 
-    @article{kumar2020densemanifold,
-      title={Dense Non-Rigid Structure from Motion: A Manifold Viewpoint},
-      author={Kumar, Suryansh and Gool, Luc Van and Oliveira, Carlos E. P. de and Cherian, Anoop and Dai, Yuchao and Li, Hongdong},
-      journal={arXiv preprint arXiv:2006.09197},
-      year={2020}
-    }
-    </pre>
+    <!---section id="news">
+        <h2>News</h2>
+        <hr>
+        <div class="row">
+            <div><span class="material-icons"> event </span> [May 2021]  </div>
+            <div><span class="material-icons"> event </span> [April 2021]</div>
+            <div><span class="material-icons"> event </span> [March 2021] </div>
+            <div><span class="material-icons"> event </span> [Jan 2021] </div>
+            <div><span class="material-icons"> event </span> [Jan 2021] </div>
+        </div>
+    </section-->
+
+    <section id="abstract" />
+    <h2>Abstract</h2>
+    <hr>
+    <div class="flex-row">
+      <div style="width: 60%">
+        <p>The problem of recovering the 3D shape of a non-rigidly deforming object from its image feature
+          correspondences across multiple frames is widely known as Non-Rigid Structure from Motion (NRSfM). It is a
+          well-defined classical problem whose solution can assist several industrial applications in virtual reality,
+          medical surgery, movies, etc. However, the task is challenging due to the inherent unconstrained nature of the
+          problem itself, as many 3D varying configurations can have similar image projections. To date, no algorithm
+          can solve NRSfM for all kinds of conceivable motion. Consequently, additional constraints, priors, and
+          assumptions are often employed to solve NRSfM. Our work takes on this challenging problem and proposes
+          algorithms that have set a new performance benchmark to solve NRSfM. Our solutions discuss the classical work
+          in NRSfM and suggest necessary elementary modifications to it. The foundation of our contributions surpasses
+          the traditional single object NRSFM and, for the first time, provides an effective formulation to realize
+          multi-body NRSfM. Further, most NRSfM factorization methods can effectively handle only sparse feature
+          correspondences. Later, sparse 3d points are used to approximate the object's dense shape via the organization
+          of 3d points, planes, or other elementary geometric primitive. Nevertheless, sparse representation provides
+          incomplete information about the object's global shape. On the contrary, our proposed methods can directly
+          solve dense NRSfM showing state-of-the-art accuracy.
+        </p>
+      </div>
+      <div style="width: 40%">
+        <figure style="padding-left: 24px; margin-bottom: 0">
+          <img width="100%" src="./Figures/nrsfm_setup.png">
+          <p class="caption">
+            A visual illustration of basic pipeline setup for NRSfM factorization. The above dataset is taken from
+            walking sequence introduced by Torresani et al. T-PAMI, 2008.
+          </p>
+        </figure>
+      </div>
+    </div>
+    <p>
+
+      For dense NRSfM, we show that we can recover dense deforming shape with favorable accuracy using just matrix
+      factorization approach. Further, carefully
+      crafted linear subspace modeling can further enchance the dense NRSfM performance accuracy. The figure below show
+      the visualization for linear subspace
+      modeling using grassmannians.
+    <figure style="margin-top: 20px; margin-bottom: 20px;">
+      <img width="100%" src="Figures/dense_modeling.png">
+      <p class="caption">
+        We represent shape as a union of low-dimensional linear subspace.
+      <p class="caption">
+      </p>
+    </figure>
+    </section>
+
+    <section id="results">
+      <h2>Results</h2>
+      <hr>
+      <figure style="width: 100%;">
+        <a href="Figures/nrsfm_challenge_results.png">
+          <img width="100%" src="Figures/nrsfm_challenge_results.png">
+        </a>
+        <p class="caption" style="margin-bottom: 24px;">
+          <b>Sparse NRSfM:</b> Qualitative Results on CVPR NRSfM Challenge 2017 Dataset (Jensen et al. IJCV 2021).
+        </p>
+      </figure>
+
+      <figure style="width: 100%;">
+        <a href="Figures/multibody_results.png">
+          <img width="100%" src="Figures/multibody_results.png">
+        </a>
+        <p class="caption">
+          <b>Multi-body Sparse NRSfM:</b> Qualitative Results on Motion Capture Dataset. We synthesized multi-body
+          dataset
+          using Akther et al. NIPS 2009 and Torresani et al. TPAMI 2008 dataset sequence.
+        </p>
+      </figure>
+
+      <figure style="width: 100%;">
+        <a href="Figures/dense_nrsfm_results.png">
+          <img width="100%" src="Figures/dense_nrsfm_results.png">
+        </a>
+        <p class="caption">
+          <b>Dense NRSfM:</b> Qualitative Results on Garg et al. CVPR 2013, Varol et al. CVPR 2012 dataset.
+        </p>
+      </figure>
+    </section>
+
+    <section id="paper">
+      <h2>Papers</h2>
+      <hr>
+      <div class="flex-row">
+        <div style="width: 100%">
+          <p><b>[1]. Superpixel Soup: Monocular Dense 3D Reconstruction of a Complex Dynamic Scene, IEEE T-PAMI
+              2021.</b></p>
+          <p><b>[2]. Non-Rigid Structure from Motion: Prior-Free Factorization Method Revisited, IEEE/CVF WACV 2020.</b>
+          </p>
+          <p><b>[3]. Jumping manifolds: Geometry aware dense non-rigid structure from motion, IEEE/CVF CVPR 2019.</b>
+          </p>
+          <p><b>[4]. Scalable dense non-rigid structure-from-motion: A grassmannian perspective, IEEE/CVF CVPR 2018.</b>
+          </p>
+          <p><b>[5]. Monocular dense 3d reconstruction of a complex dynamic scene from two perspective frames, IEEE/CVF
+              ICCV 2017.</b></p>
+          <p><b>[6]. Spatial-Temporal Union of Subspaces for Multi body Non-rigid Structure from Motion, Elsevier
+              Pattern Recognition 2017.</b></p>
+          <p><b>[7]. Multi body Non-rigid Structure from Motion, IEEE 3DV 2016.</b></p>
+          <div align="center">
+            <span class="material-icons"> description </span><a href="https://arxiv.org/a/kumar_s_12.html"> arXiv
+              page</a>
+            <span class="material-icons"> insert_comment </span><a href="Bib/bibtex.txt"> BibTeX</a>
+            <span class="material-icons"> integration_instructions </span><a href="https://github.com/suryanshkumar">
+              Code</a>
+            <span class="material-icons"> videocam </span><a
+              href="https://www.youtube.com/channel/UCJiGIKtRjtPVl2gct9-ojag"> Video</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bibtex">
+      <h2>Project Accomplishment</h2>
+      <hr>
+      <pre><code>
+		<li>Recipient of Best Algorithm Award from Disney Research at NRSFM challenge CVPR 2017, Hawaii USA.</li>
+      		<li>Nominated for J.G Crawford Prize for Best Doctoral Thesis 2019, ANU Canberra.</li>
+      		<li>Recipient of HDR Merit Scholarship, funded in part by Australian Research Council.</li>
+      		<li>Recipient of Vice-Chancellor Grant for CVPR 2018 Conference, Salt Lake City, Utah USA.</li>
+	</code></pre>
+    </section>
+
+    <section id="acknowledgements">
+      <h2>Acknowledgements</h2>
+      <hr>
+      <div class="row">
+        Yuchao Dai, Hongdong Li, Anoop Cherian, Carl Olsson, Luc Van Gool.
+      </div>
+    </section>
   </div>
-
-</div> 
 </body>
 
 </html>
