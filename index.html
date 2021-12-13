@@ -242,7 +242,7 @@
 
     <div id="authors">
       <div class="author-row">
-        <div align="center"><a href="">Suryansh Kumar</a>, ETH Zurich</div>
+        <div align="center"><a href="https://suryanshkumar.github.io/">Suryansh Kumar</a>, ETH Zurich</div>
       </div>
     </div>
 
@@ -331,11 +331,11 @@
     </div>
     <p>
 
-      For dense NRSfM, we show that we can recover dense deforming shape with favorable accuracy using just matrix
-      factorization approach. Further, carefully
-      crafted linear subspace modeling can further enchance the dense NRSfM performance accuracy. The figure below show
-      the visualization for linear subspace
-      modeling using grassmannians.
+      For <b>dense NRSfM</b>, we show that we can recover deforming shape 3d with favorable accuracy using just matrix
+      factorization approach. However, a carefully modeling using local linear subspace structure can further enchance 
+      the dense NRSfM  performance accuracy. The figure below show the visualization of such a linear subspace modeling 
+      using grassmannian representation.
+
     <figure style="margin-top: 20px; margin-bottom: 20px;">
       <img width="100%" src="Figures/dense_modeling.png">
       <p class="caption">
@@ -346,7 +346,7 @@
     </section>
 
     <section id="results">
-      <h2>Results</h2>
+      <h2>Qualitative Results</h2>
       <hr>
       <figure style="width: 100%;">
         <a href="Figures/nrsfm_challenge_results.png">
@@ -355,7 +355,7 @@
         <p class="caption" style="margin-bottom: 24px;">
           <b>Sparse NRSfM:</b> Qualitative Results on CVPR NRSfM Challenge 2017 Dataset (Jensen et al. IJCV 2021).
         </p>
-      </figure>
+      </figure><br/><br/>
 
       <figure style="width: 100%;">
         <a href="Figures/multibody_results.png">
@@ -363,10 +363,9 @@
         </a>
         <p class="caption">
           <b>Multi-body Sparse NRSfM:</b> Qualitative Results on Motion Capture Dataset. We synthesized multi-body
-          dataset
-          using Akther et al. NIPS 2009 and Torresani et al. TPAMI 2008 dataset sequence.
+          dataset using Akther et al. NIPS 2009 and Torresani et al. TPAMI 2008 dataset sequence.
         </p>
-      </figure>
+      </figure><br/><br/>
 
       <figure style="width: 100%;">
         <a href="Figures/dense_nrsfm_results.png">
@@ -376,38 +375,45 @@
           <b>Dense NRSfM:</b> Qualitative Results on Garg et al. CVPR 2013, Varol et al. CVPR 2012 dataset.
         </p>
       </figure>
-    </section>
+    </section><br/>
 
     <section id="paper">
-      <h2>Papers</h2>
+      <h2>Published Work and Other Useful Links</h2>
       <hr>
       <div class="flex-row">
         <div style="width: 100%">
-          <p><b>[1]. Superpixel Soup: Monocular Dense 3D Reconstruction of a Complex Dynamic Scene, IEEE T-PAMI
-              2021.</b></p>
-          <p><b>[2]. Non-Rigid Structure from Motion: Prior-Free Factorization Method Revisited, IEEE/CVF WACV 2020.</b>
-          </p>
-          <p><b>[3]. Jumping manifolds: Geometry aware dense non-rigid structure from motion, IEEE/CVF CVPR 2019.</b>
-          </p>
-          <p><b>[4]. Scalable dense non-rigid structure-from-motion: A grassmannian perspective, IEEE/CVF CVPR 2018.</b>
-          </p>
-          <p><b>[5]. Monocular dense 3d reconstruction of a complex dynamic scene from two perspective frames, IEEE/CVF
-              ICCV 2017.</b></p>
-          <p><b>[6]. Spatial-Temporal Union of Subspaces for Multi body Non-rigid Structure from Motion, Elsevier
-              Pattern Recognition 2017.</b></p>
-          <p><b>[7]. Multi body Non-rigid Structure from Motion, IEEE 3DV 2016.</b></p>
+          [1]. <a href="https://ieeexplore.ieee.org/document/8910408" style="color: rgb(92, 17, 17)">Superpixel Soup: Monocular Dense 3D Reconstruction of a Complex Dynamic Scene</a>, 
+          <b> IEEE T-PAMI 2021.</b><br/>
+
+          [2]. <a href="https://ieeexplore.ieee.org/document/9093514" style="color: rgb(92, 17, 17)">Non-Rigid Structure from Motion: Prior-Free Factorization Method Revisited</a>, 
+          <b> IEEE/CVF WACV 2020.</b><br/>
+
+          [3]. <a href="https://ieeexplore.ieee.org/document/8953811" style="color: rgb(92, 17, 17)">Jumping manifolds: Geometry aware dense non-rigid structure from motion</a>, 
+          <b> IEEE/CVF CVPR 2019.</b><br/>
+
+          [4]. <a href="https://ieeexplore.ieee.org/document/8578132" style="color: rgb(92, 17, 17)">Scalable dense non-rigid structure-from-motion: A grassmannian perspective</a>, 
+          <b> IEEE/CVF CVPR 2018.</b><br/>
+
+          [5]. <a href="https://ieeexplore.ieee.org/document/8237760" style="color: rgb(92, 17, 17)">Monocular dense 3d reconstruction of a complex dynamic scene from two perspective frames</a>, 
+          <b> IEEE/CVF ICCV 2017.</b><br/>
+
+          [6]. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320317302029?via%3Dihub" style="color: rgb(92, 17, 17)">Spatial-Temporal Union of Subspaces for Multi body Non-rigid Structure from Motion</a>, 
+          <b> Elsevier Pattern Recognition 2017.</b><br/>
+
+          [7]. <a href="https://ieeexplore.ieee.org/document/7785087" style="color: rgb(92, 17, 17)">Multi body Non-rigid Structure from Motion</a>,
+          <b> IEEE 3DV 2016.</b><br/>
+          <br/><br/>
+
           <div align="center">
-            <span class="material-icons"> description </span><a href="https://arxiv.org/a/kumar_s_12.html"> arXiv
-              page</a>
-            <span class="material-icons"> insert_comment </span><a href="Bib/bibtex.txt"> BibTeX</a>
-            <span class="material-icons"> integration_instructions </span><a href="https://github.com/suryanshkumar">
-              Code</a>
-            <span class="material-icons"> videocam </span><a
-              href="https://www.youtube.com/channel/UCJiGIKtRjtPVl2gct9-ojag"> Video</a>
+            <span class="material-icons"> description </span><a href="https://arxiv.org/a/kumar_s_12.html"> arXiv page </a>
+            &nbsp;&nbsp; <span class="material-icons"> insert_comment </span><a href="Bib/bibtex.txt"> BibTeX</a>
+            &nbsp;&nbsp; <span class="material-icons"> integration_instructions </span><a href="https://github.com/suryanshkumar"> Dataset</a>
+            &nbsp;&nbsp; <span class="material-icons"> integration_instructions </span><a href="https://github.com/suryanshkumar"> Code</a>
+            &nbsp;&nbsp; <span class="material-icons"> videocam </span><a href="https://www.youtube.com/channel/UCJiGIKtRjtPVl2gct9-ojag"> Video</a>
           </div>
         </div>
       </div>
-    </section>
+    </section><br/>
 
     <section id="bibtex">
       <h2>Project Accomplishment</h2>
@@ -421,11 +427,39 @@
     </section>
 
     <section id="acknowledgements">
-      <h2>Acknowledgements</h2>
-      <hr>
-      <div class="row">
-        Yuchao Dai, Hongdong Li, Anoop Cherian, Carl Olsson, Luc Van Gool.
-      </div>
+       	<!--Authors-->
+         <table align=center style="width: 100%;">
+           <center>
+            <h2>Authors, Advisor, and Acknowledgements</h2>
+            <hr>
+           </center>
+
+            <tr align="center">
+			        <td>
+				      <div class="author_image"><img style="height:150px" src="Figures/colab/suryansh.JPG"><p>Suryansh Kumar</p></div>
+			        </td>
+
+			        <td>
+				      <div class="author_image"><img style="height:150px" src="Figures/colab/yuchaodai.jpeg"><p>Yuchao Dai</p></div>
+			        </td>
+
+			        <td>
+				      <div class="author_image"><img style="height:150px" src="Figures/colab/hongdongli.png"><p>Hongdong Li</p></div>
+			        </td>
+
+			        <td>
+				      <div class="author_image"><img style="height:150px" src="Figures/colab/luc.png"><p>Luc Van Gool</p></div>
+              </td>
+
+              <td>
+				      <div class="author_image"><img style="height:150px" src="Figures/colab/arc.jpg"><p>ARC, Australia</p></div>
+			        </td>
+
+              <td>
+				      <div class="author_image"><img style="height:150px" src="Figures/colab/cvl.jpg"><p>CVL, ETH Zurich</p></div>
+			        </td>
+            </tr>
+          </table>
     </section>
   </div>
 </body>
